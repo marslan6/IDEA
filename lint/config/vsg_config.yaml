@@ -1,0 +1,13 @@
+rule:
+    global:
+        indent_size: 4
+
+    # Disabling rules to allow single-line asserts
+    assert_002:
+        disable: true
+    assert_003:
+        disable: true
+    assert_004:
+        disable: true
+    assert_005:
+        disable: true

@@ -1,0 +1,474 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.2.1 (win64) Build 6403652 Thu Mar 19 19:48:24 GMT 2026
+| Date              : Sun Jun 14 18:35:41 2026
+| Host              : DESKTOP-SFGPEL6 running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -file timing_summary_ooc.rpt
+| Design            : idea_single
+| Device            : xczu3eg-sfvc784
+| Speed File        : -1  PRODUCTION 1.31 12-08-2025
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (193)
+6. checking no_output_delay (65)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (193)
+--------------------------------
+ There are 193 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (65)
+--------------------------------
+ There are 65 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.268        0.000                      0                  132        0.073        0.000                      0                  132        8.725        0.000                       0                    68  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock    Waveform(ns)       Period(ns)      Frequency(MHz)
+-----    ------------       ----------      --------------
+sys_clk  {0.000 9.000}      18.000          55.556          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk             0.268        0.000                      0                  132        0.073        0.000                      0                  132        8.725        0.000                       0                    68  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk
+  To Clock:  sys_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.268ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.073ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        8.725ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.268ns  (required time - arrival time)
+  Source:                 U_CTRL/FSM_sequential_current_state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@9.000ns period=18.000ns})
+  Destination:            REG4/Q_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@9.000ns period=18.000ns})
+  Path Group:             sys_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            18.000ns  (sys_clk rise@18.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        17.713ns  (logic 12.181ns (68.769%)  route 5.532ns (31.231%))
+  Logic Levels:           53  (CARRY8=10 DSP_A_B_DATA=6 DSP_ALU=6 DSP_M_DATA=3 DSP_MULTIPLIER=3 DSP_OUTPUT=6 DSP_PREADD_DATA=3 LUT2=2 LUT3=1 LUT4=6 LUT5=1 LUT6=6)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.026ns = ( 18.026 - 18.000 ) 
+    Source Clock Delay      (SCD):    0.037ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  CLOCK (IN)
+                         net (fo=67, unset)           0.037     0.037    U_CTRL/CLOCK
+    SLICE_X39Y173        FDRE                                         r  U_CTRL/FSM_sequential_current_state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y173        FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.095     0.132 r  U_CTRL/FSM_sequential_current_state_reg[1]/Q
+                         net (fo=40, routed)          0.150     0.282    U_CTRL/current_state[1]
+    SLICE_X39Y173        LUT4 (Prop_F6LUT_SLICEM_I2_O)
+                                                      0.148     0.430 f  U_CTRL/P_MULOP.result2_i_75/O
+                         net (fo=112, routed)         0.253     0.683    U_CTRL/P_MULOP.result2_i_75_n_0
+    SLICE_X38Y176        LUT4 (Prop_H5LUT_SLICEL_I0_O)
+                                                      0.164     0.847 r  U_CTRL/P_MULOP.result2_i_60__2/O
+                         net (fo=1, routed)           0.202     1.049    U_CTRL/P_MULOP.result2_i_60__2_n_0
+    SLICE_X38Y176        LUT5 (Prop_B6LUT_SLICEL_I0_O)
+                                                      0.040     1.089 r  U_CTRL/P_MULOP.result2_i_9__0/O
+                         net (fo=3, routed)           0.272     1.361    U_CTRL/KEY[91][8]
+    SLICE_X39Y172        LUT6 (Prop_H6LUT_SLICEM_I5_O)
+                                                      0.117     1.478 f  U_CTRL/P_MULOP.result2_i_36__1/O
+                         net (fo=1, routed)           0.106     1.584    U_CTRL/P_MULOP.result2_i_36__1_n_0
+    SLICE_X39Y172        LUT6 (Prop_D6LUT_SLICEM_I5_O)
+                                                      0.114     1.698 f  U_CTRL/P_MULOP.result2_i_1__1/O
+                         net (fo=2, routed)           0.169     1.867    U_ROUND/MULOP1/P_MULOP.result2/B[16]
+    DSP48E2_X3Y68        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_B[16]_B2_DATA[16])
+                                                      0.195     2.062 r  U_ROUND/MULOP1/P_MULOP.result2/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, routed)           0.000     2.062    U_ROUND/MULOP1/P_MULOP.result2/DSP_A_B_DATA.B2_DATA<16>
+    DSP48E2_X3Y68        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_B2_DATA[16]_B2B1[16])
+                                                      0.092     2.154 r  U_ROUND/MULOP1/P_MULOP.result2/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, routed)           0.000     2.154    U_ROUND/MULOP1/P_MULOP.result2/DSP_PREADD_DATA.B2B1<16>
+    DSP48E2_X3Y68        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_B2B1[16]_U[18])
+                                                      0.737     2.891 f  U_ROUND/MULOP1/P_MULOP.result2/DSP_MULTIPLIER_INST/U[18]
+                         net (fo=1, routed)           0.000     2.891    U_ROUND/MULOP1/P_MULOP.result2/DSP_MULTIPLIER.U<18>
+    DSP48E2_X3Y68        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[18]_U_DATA[18])
+                                                      0.059     2.950 r  U_ROUND/MULOP1/P_MULOP.result2/DSP_M_DATA_INST/U_DATA[18]
+                         net (fo=1, routed)           0.000     2.950    U_ROUND/MULOP1/P_MULOP.result2/DSP_M_DATA.U_DATA<18>
+    DSP48E2_X3Y68        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[18]_ALU_OUT[18])
+                                                      0.699     3.649 f  U_ROUND/MULOP1/P_MULOP.result2/DSP_ALU_INST/ALU_OUT[18]
+                         net (fo=1, routed)           0.000     3.649    U_ROUND/MULOP1/P_MULOP.result2/DSP_ALU.ALU_OUT<18>
+    DSP48E2_X3Y68        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[18]_P[18])
+                                                      0.141     3.790 r  U_ROUND/MULOP1/P_MULOP.result2/DSP_OUTPUT_INST/P[18]
+                         net (fo=3, routed)           0.392     4.182    U_ROUND/MULOP1/p_0_in[2]
+    SLICE_X39Y171        LUT4 (Prop_B6LUT_SLICEM_I1_O)
+                                                      0.116     4.298 r  U_ROUND/MULOP1/P_MULOP.result1_carry_i_15/O
+                         net (fo=1, routed)           0.018     4.316    U_ROUND/MULOP1/P_MULOP.result1_carry_i_15_n_0
+    SLICE_X39Y171        CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[7])
+                                                      0.238     4.554 f  U_ROUND/MULOP1/P_MULOP.result1_carry/CO[7]
+                         net (fo=1, routed)           0.028     4.582    U_ROUND/MULOP1/P_MULOP.result1_carry_n_0
+    SLICE_X39Y172        CARRY8 (Prop_CARRY8_SLICEM_CI_CO[0])
+                                                      0.068     4.650 f  U_ROUND/MULOP1/P_MULOP.result1_carry__0/CO[0]
+                         net (fo=1, routed)           0.253     4.903    U_ROUND/MULOP1/p_1_out/B[0]
+    DSP48E2_X3Y69        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_B[0]_B_ALU[0])
+                                                      0.211     5.114 r  U_ROUND/MULOP1/p_1_out/DSP_A_B_DATA_INST/B_ALU[0]
+                         net (fo=1, routed)           0.000     5.114    U_ROUND/MULOP1/p_1_out/DSP_A_B_DATA.B_ALU<0>
+    DSP48E2_X3Y69        DSP_ALU (Prop_DSP_ALU_DSP48E2_B_ALU[0]_ALU_OUT[13])
+                                                      0.688     5.802 f  U_ROUND/MULOP1/p_1_out/DSP_ALU_INST/ALU_OUT[13]
+                         net (fo=1, routed)           0.000     5.802    U_ROUND/MULOP1/p_1_out/DSP_ALU.ALU_OUT<13>
+    DSP48E2_X3Y69        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[13]_P[13])
+                                                      0.141     5.943 r  U_ROUND/MULOP1/p_1_out/DSP_OUTPUT_INST/P[13]
+                         net (fo=3, routed)           0.251     6.194    U_ROUND/MULOP1/O4[13]
+    SLICE_X40Y170        LUT4 (Prop_F6LUT_SLICEM_I2_O)
+                                                      0.113     6.307 f  U_ROUND/MULOP1/P_MULOP.result2_i_72/O
+                         net (fo=1, routed)           0.105     6.412    U_ROUND/MULOP1/P_MULOP.result2_i_72_n_0
+    SLICE_X41Y170        LUT6 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.149     6.561 f  U_ROUND/MULOP1/P_MULOP.result2_i_69/O
+                         net (fo=1, routed)           0.113     6.674    U_ROUND/MULOP1/P_MULOP.result2_i_69_n_0
+    SLICE_X41Y170        LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.149     6.823 f  U_ROUND/MULOP1/P_MULOP.result2_i_18/O
+                         net (fo=1, routed)           0.173     6.996    U_ROUND/MULOP3/P_MULOP.result2/A[16]
+    DSP48E2_X4Y68        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_A[16]_A2_DATA[16])
+                                                      0.241     7.237 r  U_ROUND/MULOP3/P_MULOP.result2/DSP_A_B_DATA_INST/A2_DATA[16]
+                         net (fo=1, routed)           0.000     7.237    U_ROUND/MULOP3/P_MULOP.result2/DSP_A_B_DATA.A2_DATA<16>
+    DSP48E2_X4Y68        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_A2_DATA[16]_A2A1[16])
+                                                      0.098     7.335 r  U_ROUND/MULOP3/P_MULOP.result2/DSP_PREADD_DATA_INST/A2A1[16]
+                         net (fo=1, routed)           0.000     7.335    U_ROUND/MULOP3/P_MULOP.result2/DSP_PREADD_DATA.A2A1<16>
+    DSP48E2_X4Y68        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_A2A1[16]_V[16])
+                                                      0.648     7.983 f  U_ROUND/MULOP3/P_MULOP.result2/DSP_MULTIPLIER_INST/V[16]
+                         net (fo=1, routed)           0.000     7.983    U_ROUND/MULOP3/P_MULOP.result2/DSP_MULTIPLIER.V<16>
+    DSP48E2_X4Y68        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_V[16]_V_DATA[16])
+                                                      0.057     8.040 r  U_ROUND/MULOP3/P_MULOP.result2/DSP_M_DATA_INST/V_DATA[16]
+                         net (fo=1, routed)           0.000     8.040    U_ROUND/MULOP3/P_MULOP.result2/DSP_M_DATA.V_DATA<16>
+    DSP48E2_X4Y68        DSP_ALU (Prop_DSP_ALU_DSP48E2_V_DATA[16]_ALU_OUT[16])
+                                                      0.688     8.728 f  U_ROUND/MULOP3/P_MULOP.result2/DSP_ALU_INST/ALU_OUT[16]
+                         net (fo=1, routed)           0.000     8.728    U_ROUND/MULOP3/P_MULOP.result2/DSP_ALU.ALU_OUT<16>
+    DSP48E2_X4Y68        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[16]_P[16])
+                                                      0.141     8.869 r  U_ROUND/MULOP3/P_MULOP.result2/DSP_OUTPUT_INST/P[16]
+                         net (fo=3, routed)           0.302     9.171    U_ROUND/MULOP3/p_0_in[0]
+    SLICE_X42Y171        LUT4 (Prop_A6LUT_SLICEM_I1_O)
+                                                      0.150     9.321 r  U_ROUND/MULOP3/P_MULOP.result1_carry_i_16__1/O
+                         net (fo=1, routed)           0.014     9.335    U_ROUND/MULOP3/P_MULOP.result1_carry_i_16__1_n_0
+    SLICE_X42Y171        CARRY8 (Prop_CARRY8_SLICEM_S[0]_CO[7])
+                                                      0.241     9.576 f  U_ROUND/MULOP3/P_MULOP.result1_carry/CO[7]
+                         net (fo=1, routed)           0.028     9.604    U_ROUND/MULOP3/P_MULOP.result1_carry_n_0
+    SLICE_X42Y172        CARRY8 (Prop_CARRY8_SLICEM_CI_CO[0])
+                                                      0.068     9.672 f  U_ROUND/MULOP3/P_MULOP.result1_carry__0/CO[0]
+                         net (fo=1, routed)           0.253     9.925    U_ROUND/MULOP3/p_1_out/B[0]
+    DSP48E2_X4Y69        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_B[0]_B_ALU[0])
+                                                      0.211    10.136 r  U_ROUND/MULOP3/p_1_out/DSP_A_B_DATA_INST/B_ALU[0]
+                         net (fo=1, routed)           0.000    10.136    U_ROUND/MULOP3/p_1_out/DSP_A_B_DATA.B_ALU<0>
+    DSP48E2_X4Y69        DSP_ALU (Prop_DSP_ALU_DSP48E2_B_ALU[0]_ALU_OUT[1])
+                                                      0.688    10.824 f  U_ROUND/MULOP3/p_1_out/DSP_ALU_INST/ALU_OUT[1]
+                         net (fo=1, routed)           0.000    10.824    U_ROUND/MULOP3/p_1_out/DSP_ALU.ALU_OUT<1>
+    DSP48E2_X4Y69        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[1]_P[1])
+                                                      0.141    10.965 r  U_ROUND/MULOP3/p_1_out/DSP_OUTPUT_INST/P[1]
+                         net (fo=4, routed)           0.334    11.299    U_ROUND/MULOP2/P[1]
+    SLICE_X41Y167        LUT3 (Prop_B6LUT_SLICEL_I2_O)
+                                                      0.040    11.339 r  U_ROUND/MULOP2/ADD_OUT_O0_carry_i_7__0/O
+                         net (fo=1, routed)           0.010    11.349    U_ROUND/ADDOP4/S[1]
+    SLICE_X41Y167        CARRY8 (Prop_CARRY8_SLICEL_S[1]_CO[7])
+                                                      0.233    11.582 r  U_ROUND/ADDOP4/ADD_OUT_O0_carry/CO[7]
+                         net (fo=1, routed)           0.028    11.610    U_ROUND/ADDOP4/ADD_OUT_O0_carry_n_0
+    SLICE_X41Y168        CARRY8 (Prop_CARRY8_SLICEL_CI_O[3])
+                                                      0.104    11.714 r  U_ROUND/ADDOP4/ADD_OUT_O0_carry__0/O[3]
+                         net (fo=2, routed)           0.409    12.124    U_ROUND/MULOP2/B[1]
+    SLICE_X42Y167        LUT6 (Prop_C6LUT_SLICEM_I3_O)
+                                                      0.113    12.237 f  U_ROUND/MULOP2/P_MULOP.result2_i_19__0/O
+                         net (fo=1, routed)           0.049    12.286    U_ROUND/ADDOP4/DSP_A_B_DATA_INST_0
+    SLICE_X42Y167        LUT6 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.038    12.324 f  U_ROUND/ADDOP4/P_MULOP.result2_i_1/O
+                         net (fo=1, routed)           0.169    12.493    U_ROUND/MULOP4/P_MULOP.result2/B[16]
+    DSP48E2_X4Y66        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_B[16]_B2_DATA[16])
+                                                      0.195    12.688 r  U_ROUND/MULOP4/P_MULOP.result2/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, routed)           0.000    12.688    U_ROUND/MULOP4/P_MULOP.result2/DSP_A_B_DATA.B2_DATA<16>
+    DSP48E2_X4Y66        DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_DSP48E2_B2_DATA[16]_B2B1[16])
+                                                      0.092    12.780 r  U_ROUND/MULOP4/P_MULOP.result2/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, routed)           0.000    12.780    U_ROUND/MULOP4/P_MULOP.result2/DSP_PREADD_DATA.B2B1<16>
+    DSP48E2_X4Y66        DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_DSP48E2_B2B1[16]_U[21])
+                                                      0.737    13.517 f  U_ROUND/MULOP4/P_MULOP.result2/DSP_MULTIPLIER_INST/U[21]
+                         net (fo=1, routed)           0.000    13.517    U_ROUND/MULOP4/P_MULOP.result2/DSP_MULTIPLIER.U<21>
+    DSP48E2_X4Y66        DSP_M_DATA (Prop_DSP_M_DATA_DSP48E2_U[21]_U_DATA[21])
+                                                      0.059    13.576 r  U_ROUND/MULOP4/P_MULOP.result2/DSP_M_DATA_INST/U_DATA[21]
+                         net (fo=1, routed)           0.000    13.576    U_ROUND/MULOP4/P_MULOP.result2/DSP_M_DATA.U_DATA<21>
+    DSP48E2_X4Y66        DSP_ALU (Prop_DSP_ALU_DSP48E2_U_DATA[21]_ALU_OUT[21])
+                                                      0.699    14.275 f  U_ROUND/MULOP4/P_MULOP.result2/DSP_ALU_INST/ALU_OUT[21]
+                         net (fo=1, routed)           0.000    14.275    U_ROUND/MULOP4/P_MULOP.result2/DSP_ALU.ALU_OUT<21>
+    DSP48E2_X4Y66        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[21]_P[21])
+                                                      0.141    14.416 r  U_ROUND/MULOP4/P_MULOP.result2/DSP_OUTPUT_INST/P[21]
+                         net (fo=3, routed)           0.449    14.865    U_ROUND/MULOP4/p_0_in[5]
+    SLICE_X42Y166        LUT4 (Prop_C6LUT_SLICEM_I3_O)
+                                                      0.062    14.927 r  U_ROUND/MULOP4/P_MULOP.result1_carry_i_14__2/O
+                         net (fo=1, routed)           0.023    14.950    U_ROUND/MULOP4/P_MULOP.result1_carry_i_14__2_n_0
+    SLICE_X42Y166        CARRY8 (Prop_CARRY8_SLICEM_S[2]_CO[7])
+                                                      0.203    15.153 f  U_ROUND/MULOP4/P_MULOP.result1_carry/CO[7]
+                         net (fo=1, routed)           0.028    15.181    U_ROUND/MULOP4/P_MULOP.result1_carry_n_0
+    SLICE_X42Y167        CARRY8 (Prop_CARRY8_SLICEM_CI_CO[0])
+                                                      0.068    15.249 f  U_ROUND/MULOP4/P_MULOP.result1_carry__0/CO[0]
+                         net (fo=1, routed)           0.253    15.502    U_ROUND/MULOP4/p_1_out/B[0]
+    DSP48E2_X4Y67        DSP_A_B_DATA (Prop_DSP_A_B_DATA_DSP48E2_B[0]_B_ALU[0])
+                                                      0.211    15.713 r  U_ROUND/MULOP4/p_1_out/DSP_A_B_DATA_INST/B_ALU[0]
+                         net (fo=1, routed)           0.000    15.713    U_ROUND/MULOP4/p_1_out/DSP_A_B_DATA.B_ALU<0>
+    DSP48E2_X4Y67        DSP_ALU (Prop_DSP_ALU_DSP48E2_B_ALU[0]_ALU_OUT[1])
+                                                      0.688    16.401 f  U_ROUND/MULOP4/p_1_out/DSP_ALU_INST/ALU_OUT[1]
+                         net (fo=1, routed)           0.000    16.401    U_ROUND/MULOP4/p_1_out/DSP_ALU.ALU_OUT<1>
+    DSP48E2_X4Y67        DSP_OUTPUT (Prop_DSP_OUTPUT_DSP48E2_ALU_OUT[1]_P[1])
+                                                      0.141    16.542 r  U_ROUND/MULOP4/p_1_out/DSP_OUTPUT_INST/P[1]
+                         net (fo=3, routed)           0.307    16.849    U_ROUND/MULOP3/ADD_OUT_O0_carry__0[1]
+    SLICE_X42Y164        LUT2 (Prop_B6LUT_SLICEM_I1_O)
+                                                      0.063    16.912 r  U_ROUND/MULOP3/ADD_OUT_O0_carry_i_7/O
+                         net (fo=1, routed)           0.018    16.930    U_ROUND/ADDOP3/S[1]
+    SLICE_X42Y164        CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[7])
+                                                      0.238    17.168 r  U_ROUND/ADDOP3/ADD_OUT_O0_carry/CO[7]
+                         net (fo=1, routed)           0.028    17.196    U_ROUND/ADDOP3/ADD_OUT_O0_carry_n_0
+    SLICE_X42Y165        CARRY8 (Prop_CARRY8_SLICEM_CI_O[7])
+                                                      0.146    17.342 r  U_ROUND/ADDOP3/ADD_OUT_O0_carry__0/O[7]
+                         net (fo=2, routed)           0.281    17.623    U_ROUND/MULOP3/O[7]
+    SLICE_X43Y164        LUT2 (Prop_A6LUT_SLICEM_I0_O)
+                                                      0.064    17.687 r  U_ROUND/MULOP3/Q[15]_i_1__2/O
+                         net (fo=1, routed)           0.063    17.750    REG4/D[15]
+    SLICE_X43Y164        FDRE                                         r  REG4/Q_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)   18.000    18.000 r  
+                                                      0.000    18.000 r  CLOCK (IN)
+                         net (fo=67, unset)           0.026    18.026    REG4/CLOCK
+    SLICE_X43Y164        FDRE                                         r  REG4/Q_reg[15]/C
+                         clock pessimism              0.000    18.026    
+                         clock uncertainty           -0.035    17.991    
+    SLICE_X43Y164        FDRE (Setup_AFF_SLICEM_C_D)
+                                                      0.027    18.018    REG4/Q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         18.018    
+                         arrival time                         -17.750    
+  -------------------------------------------------------------------
+                         slack                                  0.268    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.073ns  (arrival time - required time)
+  Source:                 U_CTRL/FSM_sequential_current_state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@9.000ns period=18.000ns})
+  Destination:            U_CTRL/FSM_sequential_current_state_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk  {rise@0.000ns fall@9.000ns period=18.000ns})
+  Path Group:             sys_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk rise@0.000ns - sys_clk rise@0.000ns)
+  Data Path Delay:        0.125ns  (logic 0.060ns (48.061%)  route 0.065ns (51.939%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.006ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.019ns
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  CLOCK (IN)
+                         net (fo=67, unset)           0.013     0.013    U_CTRL/CLOCK
+    SLICE_X39Y173        FDRE                                         r  U_CTRL/FSM_sequential_current_state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y173        FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.038     0.051 r  U_CTRL/FSM_sequential_current_state_reg[1]/Q
+                         net (fo=40, routed)          0.044     0.095    U_CTRL/current_state[1]
+    SLICE_X39Y173        LUT3 (Prop_B6LUT_SLICEM_I1_O)
+                                                      0.022     0.117 r  U_CTRL/FSM_sequential_current_state[1]_i_1/O
+                         net (fo=1, routed)           0.021     0.138    U_CTRL/FSM_sequential_current_state[1]_i_1_n_0
+    SLICE_X39Y173        FDRE                                         r  U_CTRL/FSM_sequential_current_state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk rise edge)    0.000     0.000 r  
+                                                      0.000     0.000 r  CLOCK (IN)
+                         net (fo=67, unset)           0.019     0.019    U_CTRL/CLOCK
+    SLICE_X39Y173        FDRE                                         r  U_CTRL/FSM_sequential_current_state_reg[1]/C
+                         clock pessimism              0.000     0.019    
+    SLICE_X39Y173        FDRE (Hold_BFF_SLICEM_C_D)
+                                                      0.046     0.065    U_CTRL/FSM_sequential_current_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.065    
+                         arrival time                           0.138    
+  -------------------------------------------------------------------
+                         slack                                  0.073    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk
+Waveform(ns):       { 0.000 9.000 }
+Period(ns):         18.000
+Sources:            { CLOCK }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     FDRE/C   n/a            0.550         18.000      17.450     SLICE_X42Y169  REG1/Q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         9.000       8.725      SLICE_X42Y169  REG1/Q_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         9.000       8.725      SLICE_X42Y169  REG1/Q_reg[0]/C

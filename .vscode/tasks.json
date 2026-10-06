@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "VSG: Fix Style",
+            "type": "shell",
+            "command": "vsg --style jcl --configuration '${workspaceFolder}/lint/config/vsg_config.yaml' --fix -f '${file}'",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
